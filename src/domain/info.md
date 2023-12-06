@@ -1,0 +1,1 @@
+En domain tendremos reglas para nuestro servidor
