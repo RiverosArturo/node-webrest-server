@@ -1,1 +1,1 @@
-En domain tendremos reglas para nuestro servidor
+En domain tendremos reglas que se van a imponer sobre todo en nuestro código, todo debe estar en el lenguaje que usemos, no puede haber librerias de terceros

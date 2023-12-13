@@ -1,0 +1,14 @@
+import { CreateTodoDto, UpdateTodoDto } from "../dtos";
+import { TodoEntity } from "../entities/todo.entity";
+
+
+export abstract class TodoDatasource {
+    //Pasamos nuestro dto para tener toda la informacion que necesitamos
+    abstract create( createTodoDto: CreateTodoDto ): Promise<TodoEntity>;
+    // TODO: paginacion
+    abstract getAll(): Promise<TodoEntity[]>;
+
+    abstract findById( id: number ): Promise<TodoEntity>;
+    abstract updateById( updateTodoDto: UpdateTodoDto ): Promise<TodoEntity>;
+    abstract deleteById( id: number ): Promise<TodoEntity>;
+}
